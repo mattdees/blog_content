@@ -7,6 +7,7 @@ INPUTDIR=$(BASEDIR)/content
 OUTPUTDIR=$(BASEDIR)/output
 CONFFILE=$(BASEDIR)/pelicanconf.py
 PUBLISHCONF=$(BASEDIR)/publishconf.py
+DOMAIN=geck.guru
 
 FTP_HOST=localhost
 FTP_USER=anonymous
@@ -82,6 +83,7 @@ s3_upload: publish
 	s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl-public --delete-removed
 
 github: publish
+	echo $(DOMAIN) > $(OUTPUTDIR)/CNAME
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
 
