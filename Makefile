@@ -84,7 +84,7 @@ s3_upload: publish
 
 distribute: publish
 	cp -prf output/* output_git/
-	cd output_git/
+	cd output_git
 	echo `pwd`
 	git add .
 	git commit -a -m 'update'
