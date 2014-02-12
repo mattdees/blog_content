@@ -83,13 +83,7 @@ s3_upload: publish
 	s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl-public --delete-removed
 
 distribute: publish
-	cp -prf output/* output_git/
-	cd output_git
-	echo `pwd`
-	git add .
-	git commit -a -m 'update'
-	git push origin master
-	cd -
+	cp -prf output/* output_git/ && cd output_git && echo `pwd` && 	git add . && git commit -a -m 'update' && git push origin master && cd -
 	
 #github: publish
 #	echo $(DOMAIN) > $(OUTPUTDIR)/CNAME

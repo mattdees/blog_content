@@ -27,5 +27,4 @@ This blog post was written in markdown, from my editor of choice (sublime text).
 
 ## Drawbacks
 
-If you read the post above, you'd probably come to the conclusion that static generated sites are **the** solution to everything.  Sadly, this is not the case.  If you are not a saavy user who isn't comfortable writing in markup than a WYSIWYG editor, if you don't have a firm grasp on concepts like files, moving files between locations, etc, these tools may not be for you.
-
+If you read the post above, you'd probably come to the conclusion that static generated sites are **the** solution to everything.  Sadly, this is not the case.  If you are not a saavy user who isn't comfortable writing in markup than a WYSIWYG editor, if you don't have a firm grasp on concepts like files, moving files between locations, etc, these tools may not be for you. I say this after having spent time hacking on a Makefile to get my blog working.
