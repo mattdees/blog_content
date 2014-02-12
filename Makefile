@@ -83,7 +83,6 @@ s3_upload: publish
 	s3cmd sync $(OUTPUTDIR)/ s3://$(S3_BUCKET) --acl-public --delete-removed
 
 github: publish
-	echo 'output/' > $(OUTPUTDIR)/.gitignore 
 	echo $(DOMAIN) > $(OUTPUTDIR)/CNAME
 	ghp-import $(OUTPUTDIR)
 	git push origin gh-pages
