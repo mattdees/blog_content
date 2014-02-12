@@ -13,7 +13,7 @@ There are quite a few articles out there discussing the *what* of static site ge
 
 ## Security!
 
-If you work in the hosting industry, or perhaps even pay attention to the hosting industry, you're probably well aware of the various security concerns that the various blogging software, CMSes and forums all cause. The #1 source of exploits on any shared hosting platform is caused by out of date user software. There are steps that a host can take to avoid exploitation, such as mod_security, virtual environments and other mitigation techniques. At the end of the day, if an attacker can get your client's software to execute arbitrary code, you will eventually have to deal with it.
+If you work in the hosting industry, or perhaps even pay attention to the hosting industry, you're probably well aware of the various security concerns that the various blogging software, CMSes and forums all cause. The #1 source of exploits on any shared hosting platform is caused by out of date user software. There are steps that a host can take to avoid exploitation, such as mod_security, virtual environments and other mitigation techniques. At the end of the day, if an attacker can get your client's software eventually they will be able to execute arbitrary code with it.
 
 Static site generation works around this by generating raw HTML & CSS based off of a template and publishing it to a directory. This means that with a static generated site - one's website is not as open to attacks.
 
